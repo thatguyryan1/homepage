@@ -1,0 +1,21 @@
+body {
+    background-color: aqua;
+}
+p {
+    font-size: 18px;
+    color: #ac4603;
+    padding:30px;
+    margin: 30px;
+    margin-top: 60px;
+    background-color: rgb(201, 201, 201);
+}
+
+h1 {
+    font-size: 28px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#test {
+    border: 60px dashed lightblue;
+    background-color: green;
+}
