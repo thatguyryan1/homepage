@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    background-image: url(images/background.gif);
+    text-align: center;
+}
+
+p {
+    text-decoration: wavy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150px;
+    color: red;
+    -webkit-text-stroke:10px rgb(255, 255, 255);
+    padding: 150px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(2, 255, 255);
+}
+
+@keyframes monster {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+  
+.monsters {
+    animation-name: monster;
+    animation-duration: 4s;
+}
+
+@keyframes disappearing {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+.disappear {
+    animation-name: disappearing;
+    animation-duration: 4s;
+}
