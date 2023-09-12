@@ -20,6 +20,7 @@ p {
 a:link, a:visited {
     text-decoration: none;
     color: red;
+    -webkit-text-stroke:10px rgb(255, 255, 255);
 }
 
 a:hover {
