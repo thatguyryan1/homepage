@@ -1,0 +1,31 @@
+/* * {
+    box-sizing:border-box;
+    color: orangered;
+} */
+.content-box {
+    background-color:beige;
+    width:300px;
+    height:300px;
+    padding:50px;
+    border:20px solid;
+    margin:20px;
+}
+.border-box {
+    background-color:cadetblue;
+    width:300px;
+    height:300px;
+    padding:50px;
+    border:20px solid;
+    margin:20px;
+    box-sizing:border-box;
+}
+
+.inline {
+    background-color:aquamarine;
+    width:60px;
+    height:60px;
+    border:1px solid;
+    margin:20px;
+    padding: 5px;
+    display:inline-block;
+}
