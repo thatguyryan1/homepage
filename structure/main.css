@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(221, 172, 172);
+    margin: 0;
+    font-family: fantasy;
+    
+}
+
+h1 {
+    color: rgb(128, 66, 66);
+    font-size:300%;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size:200%;
+}
+
+.main-container{
+    background-color:rgb(221, 172, 172);
+    height:100vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-container2{
+    background-color:rgb(221, 172, 172);
+    height:200vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.left{
+    background-color: rgb(221, 172, 172);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height: 100%;
+    gap: 22%;
+}
+
+.left-item{
+    background-color: rgb(192, 255, 255);
+    width:100%;
+    height: 14%;
+    text-align: center;
+    border: 5px solid rgb(88, 255, 255);
+}
+
+.left-item:hover {
+    background-color: rgb(88, 255, 255);
+}
+
+.right{
+    background-color: rgb(221, 172, 172);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height: 100%;
+    gap: 22%;
+}
+
+.right-item{
+    background-color: rgb(190, 255, 173);
+    width:100%;
+    height: 14%;
+    text-align: center;
+    border: 5px solid rgb(106, 255, 69);
+}
+
+.right-item:hover {
+    background-color: rgb(106, 255, 69);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: rgb(128, 66, 66);
+}
