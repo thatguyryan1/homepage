@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkblue;
+}
+
+.greeting {
+    background-color: lightblue;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    transition: all 1s;
+}
+
+.desktop{
+    display:block;
+}
+
+.mobile {
+    display:none;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    .greeting {
+        background-color: bisque;
+        width: 300px;
+        height: 300px;
+        font-size: 30px;
+}
+}
+
+/* max-width media queries are desktop-first*/
+/* min-width media queries are mobile-first*/
+
+@media screen and (max-width: 500px) {
+
+    body {
+        background-color: coral;
+    }
+
+    .greeting {
+        background-color: lightgreen;
+        width: 400px;
+        height: 400px;
+        font-size: 40px;
+    }
+
+    .mobile {
+        display:block;
+    }
+
+    .desktop {
+        display:none;
+    }
+}
