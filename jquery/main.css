@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+    transition: background-color .3s;
+}
+
+body.dark {
+    background-color: rgb(122, 122, 111);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    transition: background-color .3s,
+    box-shadow .3s;
+
+    animation: spin 5s linear infinite;
+    animation-play-state:paused;
+}
+
+.box.dark{
+    background-color: rgb(71, 19, 19);
+}
+
+.box.glow{
+    background-color: rgb(255, 68, 68);
+    box-shadow: 0 0 10px 5px rgb(255, 68, 68);
+}
+
+.box.dark.glow{
+    background-color: rgb(146, 0, 0);
+    box-shadow: 0 0 10px 5px rgb(146, 0, 0);
+}
+
+.box.spin{
+    animation-play-state:running;
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+    
+}
+
+.cat{
+    width: 200px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.draggable {
+    cursor: grab;
+}

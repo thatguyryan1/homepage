@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: lightblue;
+}
+
+.dark {
+    background-color: rgb(63, 63, 63);
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: slategray;
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100vh;
+    width: 250px;
+    text-align: center;
+    transition: right .5s;
+}
+
+.active {
+    right: 0;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: slateblue;
+    position: fixed;
+    left: 100px;
+    bottom: 30px;
+    transition: transform .3s;
+}
+
+.spin {
+    transform: rotate(-180deg);
+}
