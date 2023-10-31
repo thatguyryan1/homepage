@@ -27,4 +27,29 @@ $(".panic-btn").click(
     }
 );
 
+function mouse_position(object) {
+
+    var posX = clientX;
+    var posY = clientY;
+
+    if (posX > mouse_position) {
+        posX = object.posX - 10;
+    }
+    else {
+        posX = object.posX + 10;
+    }
+
+    if (posY > mouse_position) {
+        posY = object.posY - 10;
+    }
+    else {
+        posY = object.posY + 10;
+    }
+
+    return (posX, PosY);
+
+
+    var t = setTimeout(mouse_position,100);
+}
+
 
