@@ -1,6 +1,7 @@
 $(".panic-btn").hide();
 $(".hidden").hide();
 $(".draggable").hide();
+$(".finalwords").hide();
 
 $(".reveal-btn").click(
     function() {
@@ -22,6 +23,7 @@ $(".panic-btn").click(
         $(".draggable").toggleClass("reveal").draggable();
         $(".hidden").toggleClass("disappear");
         $(".panic-btn").hide();
+        $(".finalwords").show().toggleClass("reveal");
     }
 );
 

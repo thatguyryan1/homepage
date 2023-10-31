@@ -163,3 +163,12 @@ p:hover {
 .draggable:hover{
     cursor: grab;
 }
+
+.finalwords{
+    opacity: 0;
+    transition: opacity 2s 3s;
+}
+
+.finalwords.reveal{
+    opacity: 100%;
+}
