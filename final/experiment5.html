@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Final</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <script type="text/javascript" src="paper-full.js"></script>
     <script src="scripts.js"></script>
     <script type="text/paperscript" canvas="canvas">
@@ -10,15 +10,10 @@
         // http://park12.wakwak.com/~shp/lc/et/en_aics_script.html
 
         project.currentStyle = {
-            fillColor: 'black'
+            fillColor: 'cyan'
         };
-        var ballPositions = [[Math.random() * window.innerWidth, Math.random() * window.innerHeight], [Math.random() * window.innerWidth, Math.random() * window.innerHeight]];
-        var temp;
-
-        for (i = 0; i < 30; i++) {
-            temp = [(Math.random() - .25) * window.innerWidth * 1.5, (Math.random() - .25) * window.innerHeight * 1.5];
-            ballPositions.push(temp);
-        }
+        var ballPositions = [[innerWidth / 2, innerHeight * 1.06 / 5]];
+        
 
 
 
@@ -28,7 +23,7 @@
         for (var i = 0, l = ballPositions.length; i < l; i++) {
             var circlePath = new Path.Circle({
                 center: ballPositions[i],
-                radius: 200 * Math.random()   //changes size of other circles
+                radius: 10   //changes size of other circles
             });
             circlePaths.push(circlePath);
         }
@@ -63,7 +58,7 @@
 
             for (var i = 0, l = paths.length; i < l; i++) {
                 for (var j = i - 1; j >= 0; j--) {
-                    var path = metaball(paths[i], paths[j], .5 * Math.random(), handle_len_rate, 1000); //middle is width of line, distance
+                    var path = metaball(paths[i], paths[j], 1 * Math.random(), handle_len_rate, 1000); //middle is width of line, distance
                     if (path) {
                         connections.appendTop(path);
                         path.removeOnMove();
@@ -145,8 +140,17 @@
         
     </script>
 </head>
-<body style="background-image: radial-gradient(maroon, maroon)">
+<body>
     <canvas id="canvas" resize></canvas>
-    <a href="experiment1.html"><button>Next</button></a>
+    <a href="index.html"><button>Next</button></a>
+    <img src="images/ufo.png" style="position: absolute; top: 0; right: 50vw; transform: translate(50%, 0); z-index: -1;;">
+    <img src="images/space.png" style="height: 100vh; width: 100vw; position: absolute; bottom: 0; right: 0; z-index: -2;;">
+    <span class="dot" style="right: 25%; bottom: 30%;"></span>
+    <span class="dot" style="right: 20%; bottom: 65%; animation-delay: 0.3s;"></span>
+    <span class="dot" style="right: 60%; bottom: 20%; animation-delay: 0.5s;"></span>
+    <span class="dot" style="right: 90%; bottom: 60%; animation-delay: 2s;"></span>
+    <span class="dot" style="right: 70%; bottom: 90%; animation-delay: 0.3s;"></span>
+    <span class="dot" style="right: 40%; bottom: 30%; animation-delay: 2s;"></span>
+    <span class="dot" style="right: 80%; bottom: 10%; animation-delay: 0.5s;"></span>
 </body>
 </html>
