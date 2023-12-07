@@ -58,7 +58,7 @@
 
             for (var i = 0, l = paths.length; i < l; i++) {
                 for (var j = i - 1; j >= 0; j--) {
-                    var path = metaball(paths[i], paths[j], 1 * Math.random(), handle_len_rate, 1000); //middle is width of line, distance
+                    var path = metaball(paths[i], paths[j], 1 * Math.random(), handle_len_rate, 10000); //middle is width of line, distance
                     if (path) {
                         connections.appendTop(path);
                         path.removeOnMove();
