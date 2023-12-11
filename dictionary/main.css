@@ -229,3 +229,17 @@ a {
     border-radius: 10px;
     width: 10vw;
 }
+
+.vib{
+    background-color: rgb(75, 128, 128);
+    border-radius: 20px;
+    transition: 1s ease-in-out;
+}
+
+.vib:hover{
+    background-color: cyan;
+}
+
+.draggable {
+    cursor: grab;
+}
