@@ -11,12 +11,20 @@ body {
     transition: background-color .3s;
     margin: 0px;
     color: white;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    background-image: url("images/background.png");
 }
 
 h1 {
-    color: black;
+    color: white;
     text-align: center;
+    font-size: 5vw;
+    margin:0;
+    padding: 1vw;
+    border-style: solid;
+    border-style: white;
+    border-width: 0 0 1vh 0;
+    text-shadow: 4px 0px 0 red, -4px 0px 0 cyan;
 }
 
 img{
@@ -31,7 +39,7 @@ p {
 .main-container{
     background-color: transparent;
 
-    width: 85vw;
+    width: 70vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -85,10 +93,49 @@ p {
     justify-content: center;
 }
 
-a{
-    margin-bottom: 20px;
-}
+.unknown {
+    --s: 18vw;   /* the size of the image */
+    --b: 8px;     /* the border thickness*/
+    --g: 14px;    /* the gap */
+    --c: cyan; /* the color */
+    
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid rgba(255, 255, 255, 0.6);
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: .3s;
+  }
 
-br{
-    margin-bottom: 20px;
-}
+  .unknown:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+  }
+
+  .unknown2 {
+    --s: 18vw;   /* the size of the image */
+    --b: 8px;     /* the border thickness*/
+    --g: 14px;    /* the gap */
+    --c: red; /* the color */
+    
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid rgba(255, 255, 255, 0.6);
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  .unknown2:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+  }
+
+  a{
+   font-size: 2.5vw;
+   color: white;
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: black; 
+   text-decoration: none;
+   text-shadow: 4px 0px 0 red, -4px 0px 0 cyan;;
+  }
